@@ -81,6 +81,14 @@ class plgfinderphocagalleryfieldsInstallerScript
             $db->qn('element') . ' = ' . $db->quote($this->extname)
         );
         $fields = array($db->qn('enabled') . ' = 1');
+		// disable finder phocagalleryimage
+		$db = Factory::getDbo();
+        $conditions = array(
+            $db->qn('type') . ' = ' . $db->q('plugin'),
+			$db->qn('folder') . ' = ' . $db->q('finder'),
+            $db->qn('element') . ' = ' . $db->q('phocagalleryimage')
+        );
+        $fields = array($db->qn('enabled') . ' = 0');
 
         $query = $db->getQuery(true);
 		$query->update($db->quoteName('#__extensions'))->set($fields)->where($conditions);

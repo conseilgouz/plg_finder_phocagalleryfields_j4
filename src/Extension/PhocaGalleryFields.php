@@ -15,6 +15,7 @@ use Joomla\Component\Finder\Administrator\Indexer\Adapter;
 use Joomla\Component\Finder\Administrator\Indexer\Helper;
 use Joomla\Component\Finder\Administrator\Indexer\Indexer;
 use Joomla\Component\Finder\Administrator\Indexer\Result;
+use Joomla\Event\DispatcherInterface;
 require_once JPATH_SITE . '/plugins/finder/phocagalleryimage/phocagalleryimage.php';
 
 defined('JPATH_BASE') or die;
@@ -22,6 +23,35 @@ defined('JPATH_BASE') or die;
 class PhocaGalleryFields extends \PlgFinderPhocagalleryImage
 {
     use DatabaseAwareTrait;
+    /**
+     * Constructor.
+     *
+     * @param   DispatcherInterface  $dispatcher  The dispatcher
+     * @param   array                $config      An optional associative array of configuration settings
+     *
+     * @since   4.2.0
+     */
+    public function __construct(DispatcherInterface $dispatcher, array $config)
+    {
+        parent::__construct($dispatcher, $config);
+
+    }	
+	protected function index(Result $item, $format = 'html') {
+		// bug in PlgFinderPhocagalleryImage
+		$registry = new Registry;
+		if (isset($item->metadata)) {
+		    $registry->loadString($item->params);
+		}
+		$item->params = $registry;
+
+		$registry = new Registry;
+		if (isset($item->metadata)) {
+		    $registry->loadString($item->metadata);
+		}
+		$item->metadata = $registry;
+
+		parent::index($item, $format);
+	}
 	
 	public function onPrepareFinderContent(\FinderIndexerResult &$row)     { 
      

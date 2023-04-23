@@ -2,12 +2,12 @@
 <extension type="plugin" group="finder" method="upgrade" version="4.0">
 	<name>plg_finder_phocagalleryfields</name>
 	<author>ConseilGouz</author>
-	<creationDate>2023/04/20</creationDate>
+	<creationDate>2023/04/23</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.conseilgouz.com</authorUrl>
 	<copyright>Copyright (C) 2023 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU/GPL</license>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>PLG_FINDER_PHOCAGALLERYFIELDS_DESCRIPTION</description>
 	<projectName>PhocaGalleryFinderPlugin</projectName>
 	<scriptfile>script.php</scriptfile>
