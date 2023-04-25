@@ -7,7 +7,7 @@
 	<authorUrl>https://www.conseilgouz.com</authorUrl>
 	<copyright>Copyright (C) 2023 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU/GPL</license>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<description>PLG_FINDER_PHOCAGALLERYFIELDS_DESCRIPTION</description>
 	<projectName>PhocaGalleryFinderPlugin</projectName>
 	<scriptfile>script.php</scriptfile>
@@ -21,6 +21,8 @@
 	<languages>
 		<language tag="en-GB">language/en-GB/plg_finder_phocagalleryfields.ini</language>
 		<language tag="en-GB">language/en-GB/plg_finder_phocagalleryfields.sys.ini</language>
+		<language tag="en-GB">language/fr-FR/plg_finder_phocagalleryfields.ini</language>
+		<language tag="en-GB">language/fr-FR/plg_finder_phocagalleryfields.sys.ini</language>
 	</languages>
 	<config>
 	<fields name="params">

@@ -3,6 +3,18 @@
 		<element>phocagalleryfields</element>
 		<type>plugin</type>
 		<group>finder</group>
+		<version>1.0.3</version>
+        <note>
+            <item>Update : 25/04/2023</item>
+        </note>
+         <fix>
+            <item>Missing fr-FR copy in install xml</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>phocagalleryfields</element>
+		<type>plugin</type>
+		<group>finder</group>
 		<version>1.0.2</version>
         <note>
             <item>Update : 25/04/2023</item>
