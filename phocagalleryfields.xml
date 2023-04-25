@@ -2,12 +2,12 @@
 <extension type="plugin" group="finder" method="upgrade" version="4.0">
 	<name>plg_finder_phocagalleryfields</name>
 	<author>ConseilGouz</author>
-	<creationDate>2023/04/23</creationDate>
+	<creationDate>2023/04/24</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.conseilgouz.com</authorUrl>
 	<copyright>Copyright (C) 2023 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU/GPL</license>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>PLG_FINDER_PHOCAGALLERYFIELDS_DESCRIPTION</description>
 	<projectName>PhocaGalleryFinderPlugin</projectName>
 	<scriptfile>script.php</scriptfile>
@@ -25,6 +25,14 @@
 	<config>
 	<fields name="params">
 		<fieldset name="basic">
+			<field name="search_link" type="list" default="0" label="PLG_FINDER_PHOCAGALLERYFIELDS_SEARCH_LINK_LABEL" description="PLG_FINDER_PHOCAGALLERYFIELDS_SEARCH_LINK_DESC">
+				<option value="0">PLG_FINDER_PHOCAGALLERYFIELDS_CATEGORY_VIEW</option>
+				<option value="1">PLG_FINDER_PHOCAGALLERYFIELDS_DETAIL_VIEW</option>
+			</field>
+			<field name="thumbnail_size" type="list" default="medium" label="PLG_FINDER_PHOCAGALLERYFIELDS_THUMBNAIL_SIZE_LABEL" description="PLG_FINDER_PHOCAGALLERYFIELDS_THUMBNAIL_SIZE_DESC">
+				<option value="medium">PLG_FINDER_PHOCAGALLERYFIELDS_MEDIUM</option>
+				<option value="small">PLG_FINDER_PHOCAGALLERYFIELDS_SMALL</option>
+			</field>
 		</fieldset>
 	</fields>
 	</config>

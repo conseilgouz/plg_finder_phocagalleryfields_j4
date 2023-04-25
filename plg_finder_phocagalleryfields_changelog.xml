@@ -3,7 +3,22 @@
 		<element>phocagalleryfields</element>
 		<type>plugin</type>
 		<group>finder</group>
-		<version>1.0.0</version>
+		<version>1.0.2</version>
+        <note>
+            <item>Update : 25/04/2023</item>
+        </note>
+         <addition>
+            <item>French language files</item>
+        </addition>
+         <fix>
+            <item>Missing plugin's parameters</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>phocagalleryfields</element>
+		<type>plugin</type>
+		<group>finder</group>
+		<version>1.0.1</version>
         <note>
             <item>Update : 23/04/2023</item>
         </note>
