@@ -54,7 +54,7 @@ class PhocaGalleryFields extends \PlgFinderPhocagalleryImage
 	}
 	
 	public function onPrepareFinderContent(\FinderIndexerResult &$row)     { 
-     
+        if (!$row->id) return; // no id => ignore
 		$fields = $this->myquery($row);
 		foreach ($fields as $field) {
 			$row->addInstruction(\FinderIndexer::TEXT_CONTEXT, $field->id); 
